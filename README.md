@@ -58,7 +58,7 @@ The code is available in challenge1.rb
 - Return `output` ordered character-count pairs 
 
 Code
-The code is available in challenge1.rb
+The code is available in challenge2.rb
 
 
 
