@@ -11,13 +11,19 @@ def comparison(a,b)
          #0 if a is equal to b
          #-1 if a is less than b
 
-         compare = case a <=> b
-             when 1 then "greater than"
-             when 0 then "equal to"
-             when -1 then "smaller than"
-         end
+         compare = (a <=> b)
+         case compare
+             when 1 
+                "#{a} is greater than #{b}"
 
-        #returning result as string
-        "#{a} is #{compare} #{b}"
+             when -1 
+                "#{a} is less than #{b}"
+
+             else
+                "#{a} is equal to #{b}"
+             end
 
 end
+p comparison (5, 4)
+p comparison (-4, -7)
+p comparison (2, 2)
