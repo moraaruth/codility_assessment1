@@ -51,11 +51,10 @@ The code is available in challenge1.rb
 ## PseudoCode:
 - Function that will have the inputs
 - create an empty `hash` called `count` to keep track of the count of each character in the input string.
-- create an empty `array` called `output` to store the count pairs in order of appearance
+- using `to_a` to convert to an array
+- using `sort_by` to sort by order of appearance
 - loop over each character in the input string.
-- check if its already in `count`
-- If not in`count` add it as a new key with a count of 1, and create a new array to the end of the `output` array.
-- Return `output` ordered character-count pairs 
+- return  a (list of arrays) in order of appearance
 
 Code
 The code is available in challenge2.rb
